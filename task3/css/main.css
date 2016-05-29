@@ -1,7 +1,7 @@
 /* 参考布局 http://www.cnblogs.com/tugenhua0707/p/3484685.html */
 
 * {
-  margin: 0;
+  margin: 0px;
   padding: 20px;
 }
 
@@ -32,6 +32,13 @@ img {
     min-width: 600px; /* 极端小的情况展开元素 */
 }
 
+.position {
+    position:relative; /* 给absolute定位 */
+    border: 1px solid #999;
+    background: #eee;
+    min-width: 600px; /* 极端小的情况展开元素 */    
+}
+
 .left {
     width: 160px;
     border: 1px solid #999;
@@ -40,15 +47,8 @@ img {
 
 .float > .left {
     float: left;
-
 }
 
-.position {
-    position:relative; /* 给absolute定位 */
-    border: 1px solid #999;
-    background: #eee;
-    min-width: 600px; /* 极端小的情况展开元素 */    
-}
 
 .position > .left {
     position: absolute;
@@ -65,7 +65,6 @@ img {
 
 .float > .right {
     float: right;
-
 }
 .position > .right {
     position: absolute;
