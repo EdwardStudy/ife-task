@@ -1,0 +1,108 @@
+/* 参考布局 http://www.cnblogs.com/tugenhua0707/p/3484685.html */
+
+* {
+  margin: 0;
+  padding: 20px;
+}
+
+body{
+  font-family: "微软雅黑";
+  font-size: 15px;
+}
+
+img {
+    height: 80px;
+    width: 80px;
+    padding: 0px;
+}
+
+/* 实现分割线 http://www.daqianduan.com/4258.html */
+.line {
+    padding: 0 20px 0;
+    margin: 20px 0;
+    line-height: 1px;
+    border-left: 200px solid #ddd;
+    border-right: 200px solid #ddd;
+    text-align: center;
+}
+
+.float {
+    border: 1px solid #999;
+    background: #eee;
+    min-width: 600px; /* 极端小的情况展开元素 */
+}
+
+.left {
+    width: 160px;
+    border: 1px solid #999;
+    background: #fff;
+}
+
+.float > .left {
+    float: left;
+
+}
+
+.position {
+    position:relative; /* 给absolute定位 */
+    border: 1px solid #999;
+    background: #eee;
+    min-width: 600px; /* 极端小的情况展开元素 */    
+}
+
+.position > .left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.right {
+    width: 120px;
+    border: 1px solid #999;
+    background: #fff;
+    padding: 0px; /* 示意图*/    
+}
+
+.float > .right {
+    float: right;
+
+}
+.position > .right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.main {
+    border: 1px solid #999;
+    background: #fff;
+    margin-left:220px; /* 边距 */
+    margin-right:140px;
+}
+
+
+.team_logo {
+    float: left; /* 使得img和div并排 */
+}
+
+.team_name {
+    width: 180px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+}
+
+.member_logo {
+    display: block; /* 进行外边距重叠 */
+    margin: 20px;
+}
+
+/* 清除浮动 */
+.clearfix::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+.clearfix { 
+    *zoom:1; /* IE/7/6 */
+}

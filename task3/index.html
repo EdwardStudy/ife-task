@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/main.css" type="text/css">
+        <title>task3:三栏式布局</title>
+    </head>
+    <body>
+        <div class="line">使用float实现</div>
+        <div class="float clearfix">
+            <div class="left">
+                <img class="team_logo" src="http://www.storagelab.org.cn/wp-content/uploads/2015/09/%E6%9D%A8%E8%95%BE_avatar_1442315929.jpg" alt="group">
+                <div class="team_name">存储实验室</div>
+            </div>
+            <div class="right">
+                <img class="member_logo" src="http://www.storagelab.org.cn/wp-content/uploads/2013/07/%E5%BC%A0%E8%BF%AA_avatar.jpg" alt="member1">
+                <img class="member_logo" src="http://www.storagelab.org.cn/wp-content/uploads/2013/07/%E5%BC%A0%E9%9B%B7_avatar.JPG" alt="member2">
+                <img class="member_logo" src="http://www.storagelab.org.cn/wp-content/uploads/2014/03/%E5%A4%8F%E5%A8%81%E5%A4%B7_avatar_1394359585.JPG" alt="member3">
+                <img class="member_logo" src="http://www.storagelab.org.cn/wp-content/uploads/2013/04/%E5%86%AF%E4%B8%9C%E7%85%9C_avatar.png" alt="member4">
+            </div>
+            <div class="main">
+                <article>
+                    中国传媒大学存储实验室长期从事信息存储的理论研究和网络存储技术开发，和国家信息中心合建存储技术工程中心，和声讯公司、中科院声学所合建安防大数据北京市重大实验室，系存储产业技术创新战略联盟首批成员单位,海量存储标准工作委员会成员单位。
+                </article>
+                <article>
+                    实验室的研究方向包括：网络存储技术，云存储技术，存储测评技术，数据容灾技术，媒体存储技术，数据归档存储技术等。实验室完成了“十一五”国家863重大专项“海量存储系统关键技术”课题的研究工作，目前承担科技部支撑计划项目课题研究工作。
+                </article> 
+                <article>
+                    实验室的研究方向包括：网络存储技术，云存储技术，存储测评技术，数据容灾技术，媒体存储技术，数据归档存储技术等。实验室完成了“十一五”国家863重大专项“海量存储系统关键技术”课题的研究工作，目前承担科技部支撑计划项目课题研究工作。
+                </article>                 
+                <!--<article>
+                    检测中间元素最高中国传媒大学存储实验室长期从事信息存储的理论研究和网络存储技术开发，和国家信息中心合建存储技术工程中心，和声讯公司、中科院声学所合建安防大数据北京市重大实验室，系存储产业技术创新战略联盟首批成员单位,海量存储标准工作委员会成员单位。
+                </article>
+                <article>
+                    实验室的研究方向包括：网络存储技术，云存储技术，存储测评技术，数据容灾技术，媒体存储技术，数据归档存储技术等。实验室完成了“十一五”国家863重大专项“海量存储系统关键技术”课题的研究工作，目前承担科技部支撑计划项目课题研究工作。
+                </article> 
+                <article>
+                    实验室的研究方向包括：网络存储技术，云存储技术，存储测评技术，数据容灾技术，媒体存储技术，数据归档存储技术等。实验室完成了“十一五”国家863重大专项“海量存储系统关键技术”课题的研究工作，目前承担科技部支撑计划项目课题研究工作。
+                </article>                   -->
+            </div>
+        </div>
+        <div class="line">使用position实现</div>
+        <div class="position">
+            <div class="left">
+                <img class="team_logo" src="http://www.storagelab.org.cn/wp-content/uploads/2015/09/%E6%9D%A8%E8%95%BE_avatar_1442315929.jpg" alt="group">
+                <div class="team_name">存储实验室</div>
+            </div>
+            <div class="right">
+                <img class="member_logo" src="http://www.storagelab.org.cn/wp-content/uploads/2013/07/%E5%BC%A0%E8%BF%AA_avatar.jpg" alt="member1">
+                <img class="member_logo" src="http://www.storagelab.org.cn/wp-content/uploads/2013/07/%E5%BC%A0%E9%9B%B7_avatar.JPG" alt="member2">
+                <img class="member_logo" src="http://www.storagelab.org.cn/wp-content/uploads/2014/03/%E5%A4%8F%E5%A8%81%E5%A4%B7_avatar_1394359585.JPG" alt="member3">
+                <img class="member_logo" src="http://www.storagelab.org.cn/wp-content/uploads/2013/04/%E5%86%AF%E4%B8%9C%E7%85%9C_avatar.png" alt="member4">
+            </div>
+            <div class="main">
+                <article>
+                    中国传媒大学存储实验室长期从事信息存储的理论研究和网络存储技术开发，和国家信息中心合建存储技术工程中心，和声讯公司、中科院声学所合建安防大数据北京市重大实验室，系存储产业技术创新战略联盟首批成员单位,海量存储标准工作委员会成员单位。
+                </article>
+                <article>
+                    实验室的研究方向包括：网络存储技术，云存储技术，存储测评技术，数据容灾技术，媒体存储技术，数据归档存储技术等。实验室完成了“十一五”国家863重大专项“海量存储系统关键技术”课题的研究工作，目前承担科技部支撑计划项目课题研究工作。
+                </article> 
+                <article>
+                    实验室的研究方向包括：网络存储技术，云存储技术，存储测评技术，数据容灾技术，媒体存储技术，数据归档存储技术等。实验室完成了“十一五”国家863重大专项“海量存储系统关键技术”课题的研究工作，目前承担科技部支撑计划项目课题研究工作。
+                </article>                 
+                <!--<article>
+                    检测中间元素最高中国传媒大学存储实验室长期从事信息存储的理论研究和网络存储技术开发，和国家信息中心合建存储技术工程中心，和声讯公司、中科院声学所合建安防大数据北京市重大实验室，系存储产业技术创新战略联盟首批成员单位,海量存储标准工作委员会成员单位。
+                </article>
+                <article>
+                    实验室的研究方向包括：网络存储技术，云存储技术，存储测评技术，数据容灾技术，媒体存储技术，数据归档存储技术等。实验室完成了“十一五”国家863重大专项“海量存储系统关键技术”课题的研究工作，目前承担科技部支撑计划项目课题研究工作。
+                </article> 
+                <article>
+                    实验室的研究方向包括：网络存储技术，云存储技术，存储测评技术，数据容灾技术，媒体存储技术，数据归档存储技术等。实验室完成了“十一五”国家863重大专项“海量存储系统关键技术”课题的研究工作，目前承担科技部支撑计划项目课题研究工作。
+                </article>                   -->
+            </div>
+        </div>
+        <script>
+            // 依据子元素更新父元素高度 参考 http://www.dengzhr.com/frontend/css/264
+            // 获取position类下等高布局元素组和其父元素
+            var positionElement = document.getElementsByClassName("position")[0];
+            var leftElement = getClassName(positionElement, "left")[0];
+            var rightElement = getClassName(positionElement, "right")[0];
+            var mainElement = getClassName(positionElement, "main")[0];
+            
+            // 获取等高元素组的元素的高度值
+            var elementsHeight = [];
+            elementsHeight.push(leftElement.offsetHeight);
+            elementsHeight.push(rightElement.offsetHeight);
+            elementsHeight.push(mainElement.offsetHeight);
+
+            // 获取等高元素组中最大高度的元素的高度值
+            var maxHeight = 0;
+            for(var i = 0, len = elementsHeight.length; i < len; i++) {
+                maxHeight = maxHeight > elementsHeight[i] ? maxHeight : elementsHeight[i];
+            }
+            // 给每一个等高元素组的定义高度为最大高度maxHeight
+            console.log(maxHeight);
+            console.log(elementsHeight);
+            positionElement.style.height = maxHeight + "px";
+
+            
+            // 获得obj节点下class属性值为oClassName的子元素集合；
+            // 参数：obj指父元素；oClassName为元素的class属性值；
+            function getClassName(obj, oClassName) {
+                // IE9+及标准浏览器可以直接使用getElementsByClassName()获取className元素集合
+                if(document.getElementsByClassName) {
+                    return obj.getElementsByClassName(oClassName);
+                }else {
+                    // classNameArr用来装载class属性值为oClassName的元素；
+                    var classNameArr = [];
+                    // 获取obj的直接子元素
+                    var objChild = obj.children || obj.childNodes;
+                    // 遍历obj元素，获取class属性值为oClassName的元素列表
+                    for(var i = 0; i < objChild.length; i++) {
+                        // 判断obj子元素的class属性值中是否含有oClassName
+                        if( hasClassName(objChild[i], oClassName) ) {
+                            classNameArr.push(objChild[i]);
+                        }
+                    }
+                    return classNameArr;
+                }
+            }
+
+            // 判断object元素的class属性值中是否含有objectClassName
+            function hasClassName(object, objectClassName) {
+                // 将class属性值由空格切分为数组
+                var classNameList = object.className.split(/\s+/);
+                // 判断
+                for(var j = 0; j < classNameList.length; j++) {
+                    return classNameList[j] = objectClassName ? true : false;
+                }
+            }           
+        </script>
+    </body>
+</html>
