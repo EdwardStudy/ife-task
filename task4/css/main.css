@@ -1,0 +1,45 @@
+/* 参考布局 http://www.cnblogs.com/tugenhua0707/p/3484685.html */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  font-family: "微软雅黑";
+  font-size: 15px;
+}
+
+.content {
+    position: absolute; /* 只能使用absolute */
+    background-color: #ccc;
+    height: 200px;
+    width: 400px;
+    margin: -100px 0 0 -200px;
+    top: 50%;
+    left: 50%;
+}
+
+.left {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #fc0;
+    height: 50px;
+    width: 50px;
+    -moz-border-radius: 0  0 50px 0; /* 四分之一圆 */
+    -webkit-border-radius: 0  0 50px 0;
+    border-radius: 0  0 50px 0;
+}
+
+.right {
+    position: relative;
+    right: -350px;
+    bottom: -100px;
+    background-color: #fc0;
+    height: 50px;
+    width: 50px;
+    -moz-border-radius: 50px 0 0 0; /* 四分之一圆 */
+    -webkit-border-radius: 50px 0 0 0;
+    border-radius: 50px 0 0 0;    
+}
